@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Block Date Input Range</title>
+</head>
+<body>
+
+<label for="date">Choose a date:</label>
+<input type="date" id="date" name="date">
+
+<script>
+    // Get the date input element
+    var dateInput = document.getElementById("date");
+
+    // Define the range to be blocked
+    var startDate = new Date("2024-04-01");
+    var endDate = new Date("2024-04-15");
+
+    // Add event listener to handle date selection
+    dateInput.addEventListener('input', function() {
+        var selectedDate = new Date(this.value);
+
+        // Disable dates within the range
+        if (selectedDate >= startDate && selectedDate <= endDate) {
+            this.setCustomValidity("Please choose a date outside the range April 1, 2024, to April 15, 2024.");
+        } else {
+            this.setCustomValidity("");
+        }
+    });
+</script>
+
+</body>
+</html>

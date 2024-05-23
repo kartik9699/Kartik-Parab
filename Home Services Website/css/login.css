@@ -1,0 +1,122 @@
+
+*{
+    margin:0;
+    padding:0;
+  }
+  body {
+      
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    
+    height: 100%;
+    width: 100%;
+    
+    
+    }
+    .wrapper {
+      color:white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 400px;
+      padding: 40px;
+      transform: translate(-50%, -50%);
+      box-sizing: border-box;
+      box-shadow: 0 15px 25px rgba(0,0,0,.6);
+      border-radius: 10px;
+      opacity: 0.5;
+      background-color:black;
+    }
+    .single-div {
+      position: relative;
+      opacity: 1.0;
+    }
+    
+    .single-div input {
+      width: 100%;
+      padding: 10px 0;
+      font-size: 20px;
+      
+      color: white;
+      margin-bottom: 30px;
+      border: none;
+      border-bottom: 2px solid #262626;
+      outline: none;
+      opacity: 1.0;
+      background-color: black;
+      
+  }
+    .single-div label {
+      position: absolute;
+      top:0;
+      left: 0;
+      padding: 10px 0;
+      font-size: 20px;
+      color:white;
+      pointer-events: none;
+      transition: .5s;
+      opacity: 1.0;
+      background-color: black;
+    }
+    
+    .single-div input:focus ~ label,
+    .single-div input:valid ~ label {
+      top: -20px;
+      left: 0;
+      color: red;
+      font-size: 12px;
+      opacity: 1.0;
+    }
+    button {
+      
+      text-decoration: none;
+      font: bold;
+      
+      display: block;
+      text-align: center;
+    height: 40px;
+      width: 90px;
+      font: bolder;
+      
+      border: rgb(5, 5, 5) 2px solid;
+      border-radius: 10px;
+      background-color: aqua;
+      font: bold;
+      opacity: 1.0;
+      color: white;
+  }
+  span{
+  color: red;
+  opacity: 1.0;
+  }
+  .sub{
+    padding-left: 35%;
+    font-size: large;
+    opacity: 1.0;
+    background-color: #000;
+
+  }
+  a{
+    color: white;
+    font: bold;
+    opacity: 1.0;
+  text-decoration: none;
+  }
+  button:hover{
+    background-color:green;
+  }
+  select{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+  }
+  option{
+    color: white;
+    background-color: black;
+  }
+  
+  
